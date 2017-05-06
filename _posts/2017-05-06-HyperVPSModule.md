@@ -17,9 +17,7 @@ Update-Help
 Before we can create a new VM we will first need to create a virtual hard drive. 
 
 We can use the snipet below to create a 20GB dynamic VHD.
-{% highlight Powershell linenos %}
-New-VHD -Dynamic -Path 'C:\Virtual HardDrives\MediaServer.vhdx'-SizeBytes 2e+10
-{% endhighlight %}
+	New-VHD -Dynamic -Path 'C:\Virtual HardDrives\MediaServer.vhdx'-SizeBytes 2e+10
 
 **Creating a new VM**
 Before we can create a new VM we will first need to create a virtual hard drive. 
