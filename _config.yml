@@ -59,7 +59,7 @@ author:
 
 # Select which links to show in the footer
 footer-links-active:
-  rss: false
+  rss: true
   facebook: false
   email: true
   twitter: false
@@ -91,7 +91,7 @@ share-links-active:
 #disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: "UA-98630752-1"
+google_analytics: "UA-98630752-1"
 
 # Google Tag Manager ID
 #gtm: ""
