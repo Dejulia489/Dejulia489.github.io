@@ -39,7 +39,8 @@ We will eventually want our new VM to connect to the internet, so lets create an
 
 ####We can use the snipet below to create a VMSwitch.
 
-	New-VMSwitch -Name VirtualSwitch1 -SwitchType Internal | Set-VMSwitch -NetAdapterName Ethernet 
+	New-VMSwitch -Name VirtualSwitch1 -SwitchType Internal | 
+		Set-VMSwitch -NetAdapterName Ethernet 
 
 
 ####We can use the snipet below to locate the NetAdapterName.
@@ -49,4 +50,6 @@ We will eventually want our new VM to connect to the internet, so lets create an
 
 ####We can use the snipet below to connect the switch to the VM.
 
-	Get-VM -Name MediaServer | Get-VMNetworkAdapter | Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'
+	Get-VM -Name MediaServer | 
+		Get-VMNetworkAdapter | 
+		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'
