@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Create a Virtual Machine in Hyper V
+title: How to Create a Linux Virtual Server in Hyper V with Powershell
 ---
 
 Now that we have enabled Hyper V we can utilize the built in Hyper V module. At the time of this post the Hyper V Module contains 232 commands, which is a rather robust module providing a lot of functionality. We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. 
@@ -60,5 +60,9 @@ We will need to run an Operating System on our new VM, you can use your favorite
 		Start-VM -VMName MediaServer
 
 Unfortunately the process to install the Linux OS requires some manual intervention. I will revisit how I install Linux	at a later time so we can fully automate this media server setup.
+
+# Wrap Up 
+
+We have barely scratched the surface of the Hyper-V Powershell module in this post. Microsoft has given us some very powerful tools for us to use built into Windows 10 for free. I hope to have time to learn more when I revisit this module for later projects.
 
 ...to be continued
