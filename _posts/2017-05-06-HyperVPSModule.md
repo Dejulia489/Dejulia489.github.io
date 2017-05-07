@@ -56,5 +56,16 @@ We will eventually want our new VM to connect to the internet, so lets create an
 		Get-VMNetworkAdapter | 
 		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'  
 
+## Bootstrapping an Operating System
+
+We will need to run an Operating System on our new VM, you can use your favorite but for this post I will use Ubuntu Studio. 
+
+###### We can use the snipet below to attach the OS .iso the VM.
+
+	Get-VMDvdDrive -VMName MediaServer | 
+		Set-VMDvdDrive -Path 'C:\Operating Systems\ubuntustudio-16.04.1-dvd-amd64.iso' |
+		Start-VM -VMName MediaServer
+
+Unfortuently the process to install the linux OS requires some manual intervention, I will revisit this process at a later time to resolve this issue. 
 
 ...to be continued
