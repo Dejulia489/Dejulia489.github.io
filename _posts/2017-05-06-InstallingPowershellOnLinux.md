@@ -41,6 +41,4 @@ We now have 350 Powershell commands at our disposal on Linux, the possibilities 
 	sudo apt-get remove powershell
 
 # Credit  
-* [Powershell Installation Documents](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)  
-
-...to be continued
+* [Powershell Installation Documents](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
