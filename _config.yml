@@ -24,7 +24,7 @@ description: Follow along as I stumble through solving new puzzels with powershe
 # List of links in the navigation bar
 navbar-links:
   Home: "https://dejulia489.github.io/"
-  About: "https://dejulia489.github.io/Aboutme/"
+  About: "https://dejulia489.github.io/2017-05-04-AboutMe/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
