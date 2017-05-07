@@ -43,11 +43,9 @@ We will eventually want our new VM to connect to the internet, so lets create an
 		Set-VMSwitch -NetAdapterName Ethernet  
 
 
-
 ###### We can use the snipet below to locate the NetAdapterName.
 
 	Get-NetAdapter  
-
 
 
 ###### We can use the snipet below to connect the switch to the VM.
@@ -55,6 +53,7 @@ We will eventually want our new VM to connect to the internet, so lets create an
 	Get-VM -Name MediaServer | 
 		Get-VMNetworkAdapter | 
 		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'  
+
 
 ## Bootstrapping an Operating System
 
@@ -66,6 +65,7 @@ We will need to run an Operating System on our new VM, you can use your favorite
 		Set-VMDvdDrive -Path 'C:\Operating Systems\ubuntustudio-16.04.1-dvd-amd64.iso' |
 		Start-VM -VMName MediaServer
 
-Unfortuently the process to install the linux OS requires some manual intervention, I will revisit this process at a later time to resolve this issue. 
+
+Unfortunately the process to install the Linux OS requires some manual intervention, I will revisit this process at a later time to resolve this issue.
 
 ...to be continued
