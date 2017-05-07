@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: Powershell How to: The Hyper V Powershell Module
+title: Powershell How to The Hyper V Powershell Module
 ---
 
 Now that we have enabled Hyper V we can utilize the built in Hyper V module. At the time of this post the Hyper V Module contains 232 commands, which is a rather robust module providing a lot of functionality. We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. 
