@@ -57,7 +57,7 @@ We will eventually want our new VM to connect to the internet, so lets create an
 
 ## Bootstrapping an Operating System
 
-We will need to run an Operating System on our new VM, you can use your favorite but for this post I will use Ubuntu Studio. 
+We will need to run an Operating System on our new VM, you can use your favorite but for this post I will use Ubuntu Studio. [Click here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/best-practices-for-running-linux-on-hyper-v) for Microsofts Best Practices for running Linux on Hyper-V.
 
 ###### We can use the snipet below to attach the OS .iso the VM.
 
