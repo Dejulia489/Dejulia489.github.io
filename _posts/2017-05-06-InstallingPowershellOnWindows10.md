@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powershell How to Install Powershell on Windows 10
+title: How to Install Powershell on Windows 10
 ---
 
 Now that we have our new Linux Virtual Machine running Powershell let's update our Hyper V host.

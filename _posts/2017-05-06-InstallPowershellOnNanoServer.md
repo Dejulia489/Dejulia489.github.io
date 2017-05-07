@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powershell How to Install Powershell on Nano Server
+title: How to Install Powershell on Nano Server
 ---
 
 Now that we have installed Powershell on Linux and Windows let's have some fun by installing Powershell 6.0.0 on Nano Server.

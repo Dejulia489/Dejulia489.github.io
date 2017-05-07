@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powershell How to Install Nano Server
+title: How to Install Nano Server
 ---
 
 # Install Nano server

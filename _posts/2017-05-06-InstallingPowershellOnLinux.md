@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powershell How to Install Powershell on Linux Ubuntu
+title: How to Install Powershell on Linux Ubuntu
 ---
 
 Now that we have our new Linux Virtual Machine running in Hyper V lets work on installing Powershell. Powershell in now an [open source](https://github.com/PowerShell/PowerShell) project on GitHub and is available for both Linux and Mac. We will first need to logon to our Media Server we created in a previous post titled [Powershell How to Create a Virtual Machine in Hyper V](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) and open the Terminal.
