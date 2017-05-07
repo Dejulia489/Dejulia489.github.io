@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Powershell How to: Enable Hyper V on Windows 10
-subtitle: 
 bigimg: /img/HyperV.png
 ---
 
 ## Enabling Hyper V
 
-Before we can enjoy our home movie content from anywhere we will need a server to host it. We are going to use Microsoft [Hyper](https://www.microsoft.com/en-us/cloud-platform/server-virtualization) V because it comes standard on Windows 10, it's free and its more than capable of handling the task at hand.
+Before we can enjoy our home movie content from anywhere we will need a server to host it. We are going to use Microsoft [Hyper V](https://www.microsoft.com/en-us/cloud-platform/server-virtualization) because it comes standard on Windows 10, it's free and its more than capable of handling the task at hand.
 
 #### We can use the snipet below to install the Hyper V optional Windows Feature.
 
