@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: minimal
 title: Powershell How to: The Hyper V Powershell Module
 ---
 
