@@ -5,7 +5,9 @@ title: Powershell How to Install Nano Server
 
 # Install Nano server
 
+Coming Soon
 
+![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
 # Credit
 

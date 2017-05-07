@@ -9,16 +9,21 @@ We will need Powershell 6.0.0 in order to remote to our new linux server, so let
 
 We want to stay focused on Powershell 6.0.0 in the post, but feel free to review one of my previous post on [How to Install Nano Server](https://dejulia489.github.io/2017-05-06-InstallNanoServer/)
 
-
 # Install Powershel 6.0.0 on Nano Server
 
+Coming Soon
 
-###### We can use the snippet below to Import the public repository GPG keys.
+![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
-	curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add
+# Install Powershel 6.0.0 on Windows 10 
 
+Coming Soon 
 
+![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
+# Install Powershel 6.0.0 on Linux Ubuntu
+
+You can refrence one of my other posts, [Powershell How to Install Powershell on Linux Ubuntu](https://dejulia489.github.io/2017-05-06-InstallingPowershellOnLinux/) to complete this exercise.
 
 # Credit
 
