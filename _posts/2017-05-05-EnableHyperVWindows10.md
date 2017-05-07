@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Powershell How to Enable Hyper V on Windows 10
-bigimg: /img/HyperV.png
 ---
 
 ## Enabling Hyper V
