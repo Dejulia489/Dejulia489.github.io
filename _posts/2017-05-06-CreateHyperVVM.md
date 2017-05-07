@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Powershell How to The Hyper V Powershell Module
+title: Powershell How to Create a Virtual Machien in Hyper V
 ---
 
 Now that we have enabled Hyper V we can utilize the built in Hyper V module. At the time of this post the Hyper V Module contains 232 commands, which is a rather robust module providing a lot of functionality. We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. 
@@ -66,6 +66,6 @@ We will need to run an Operating System on our new VM, you can use your favorite
 		Start-VM -VMName MediaServer
 
 
-Unfortunately the process to install the Linux OS requires some manual intervention, I will revisit this process at a later time to resolve this issue.
+Unfortunately the process to install the Linux OS requires some manual intervention. I will revisit this process at a later time to resolve this issue.
 
 ...to be continued
