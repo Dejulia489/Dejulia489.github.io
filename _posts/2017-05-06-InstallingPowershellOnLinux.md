@@ -18,7 +18,9 @@ Now that we have our new Linux Virtual Machine running in Hyper V lets work on i
 
 	sudo apt-get update
 
-###### We can use the snipet below to Install PowerShel.
+Now that our apt-get is up to date and we have a registered repository lets install PowerShell.  
+
+###### We can use the snipet below to Install PowerShell.
 
 	sudo apt-get install -y powershell
 
@@ -26,14 +28,19 @@ Now that we have our new Linux Virtual Machine running in Hyper V lets work on i
 
 	powershell
 
-We now have 350 Powershell commands at our disposal on Linux, the possibilities are endless
+###### We can use the snipet below to show the PowerShell version.
 
-#Uninstall
+	$PSversionTable
 
-###### We can use the snipet below to Start PowerShell.
+We now have 350 Powershell commands at our disposal on Linux, the possibilities are endless.
+
+# Uninstall
+
+###### We can use the snipet below to Uninstall PowerShell.
 
 	sudo apt-get remove powershell
 
-##Credit
-* [Powershell Installation Documents](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)
+## Credit
+* [Powershell Installation Documents](https://github.com/PowerShell/PowerShell/blob/master/docs/installation/linux.md)  
+
 ...to be continued
