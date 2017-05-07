@@ -55,3 +55,6 @@ We will eventually want our new VM to connect to the internet, so lets create an
 	Get-VM -Name MediaServer | 
 		Get-VMNetworkAdapter | 
 		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'  
+
+
+...to be continued
