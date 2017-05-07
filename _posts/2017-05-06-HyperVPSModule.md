@@ -26,7 +26,7 @@ Before we can create a new VM we will first need to create a virtual hard drive.
 	New-VM -Name MediaServer -VHDPath 'C:\Virtual HardDrives\MediaServer.vhdx' -Path 'C:\VirtualMachines' 
 
 
-## Reviewing VM configuratio
+## Reviewing VM configuration
 Now that we have a new VM to work with let's check on the default configuration. 
 
 ###### We can use the snipet below to get our VM configuration.
@@ -42,9 +42,13 @@ We will eventually want our new VM to connect to the internet, so lets create an
 	New-VMSwitch -Name VirtualSwitch1 -SwitchType Internal | 
 		Set-VMSwitch -NetAdapterName Ethernet  
 
+
+
 ###### We can use the snipet below to locate the NetAdapterName.
 
 	Get-NetAdapter  
+
+
 
 ###### We can use the snipet below to connect the switch to the VM.
 
