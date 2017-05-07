@@ -9,7 +9,7 @@ Now that we have Powershell on our Linux Virtual Machine running in Hyper V, let
 
 PowerShell remoting normally uses WinRM for connection negotiation and data transport. SSH was chosen for this remoting implementation since it is now available for both Linux and Windows platforms. PowerShell SSH remoting lets you do basic PowerShell session remoting between Windows and Linux machines. This is done by creating a PowerShell hosting process on the target machine as an SSH subsystem.
 
-# Installing SSH on Windows 10
+# Install SSH on Windows 10
 
 After reviewing the Powershell team's [PowerShell Remoting Over SSH](https://github.com/PowerShell/PowerShell/blob/866b558771a20cca3daa47f300e830b31a24ee95/docs/new-features/remoting-over-ssh/README.md) article we will be following their setup guide for both Linux and Windows. You will need at least Powershell 6.0.0 for this exercise, you can reference one of my previous posts [Powershell How to Install Powershell 6.0.0](https://dejulia489.github.io/2017-05-06-InstallPowershell6.0.0/).
 
@@ -19,7 +19,7 @@ After reviewing the Powershell team's [PowerShell Remoting Over SSH](https://git
 
 
 
-# Planning for the Future
+# Plan for the Future
 
 The use of the SSH subsystem will eventually change to a more general hosting model similar to how WinRM works in order to support endpoint configuration and JEA.
 
