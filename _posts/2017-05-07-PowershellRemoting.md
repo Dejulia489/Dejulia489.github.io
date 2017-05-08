@@ -15,7 +15,7 @@ Windows Remote Management (WinRM) service implements the WS-Management protocol 
 
 # Remoting From Linux Ubuntu to Linux Ubuntu
 
-In an two of my earlier posts we [created a Linux VM](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) and [installed Powershell on Linux](https://dejulia489.github.io/2017-05-06-InstallingPowershellOnLinux/), now let's install [OpenSSH](https://help.ubuntu.com/lts/serverguide/openssh-server.html) and start remoting. OpenSSH is a freely available version of the Secure Shell (SSH) protocol family of tools for remotely controlling, or transferring files between, computers. 
+In two of my earlier posts we [created a Linux VM](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) and [installed Powershell on Linux](https://dejulia489.github.io/2017-05-06-InstallingPowershellOnLinux/), now let's install [OpenSSH](https://help.ubuntu.com/lts/serverguide/openssh-server.html) and start remoting. OpenSSH is a freely available version of the Secure Shell (SSH) protocol family of tools for remotely controlling, or transferring files between, computers. 
 
 ###### We can use the snippet below to install OpenSSH in the terminal
 
@@ -60,7 +60,8 @@ Now we should be able to create a remote session from our Linux server to itself
 
 Now that we have remoting working on our Linux Server let's remote from our Windows Hyper V host to our Linux Ubuntu Server.
 
-...Coming Soon
+...Coming Soon  
+
 ![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
 # Credit  
