@@ -7,7 +7,7 @@ Now that we have [enabled Hyper V](https://dejulia489.github.io/2017-05-05-Enabl
 
 ## Update Help
 
-We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. I find it useful to review all the commands in a new module to get a feel for what it is capable of. You can gather a lot just from the name of the command, however sometimes the command doesn't always do what we expect it to do. This is where the help documentation comes to the resuce. 
+We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. I find it useful to review all the commands in a new module to get a feel for what it is capable of. You can gather a lot just from the name of the command, however sometimes the command doesn't always do what we expect it to do. This is where the help documentation comes into play. 
 
 ###### We can use the snippet below to update our help files.
 
@@ -15,7 +15,7 @@ We will need to leverage the help documentation for this module to better unders
 
 Now that our help files are up to date let's take a look at the first command we will want to use.
 
-###### We can use the snippet below to get the help documentation for any command.
+###### We can use the snippet below to get the help documentation for our command.
 
 	Get-Help -Name New-VHD
 
@@ -37,7 +37,7 @@ Now that we have our VHD ready let's create a new Virtual Machine and attach our
 
 # Reviewing VM configuration
 
-Now that we have a new VM to work with let's check on the default configuration. 
+Our new VM has been created let's check on the default configuration. 
 
 ###### We can use the snippet below to get our VM configuration.
 
@@ -70,10 +70,8 @@ We will need to run an Operating System on our new VM, you can use your favorite
 		Set-VMDvdDrive -Path 'C:\Operating Systems\ubuntustudio-16.04.1-dvd-amd64.iso' |
 		Start-VM -VMName MediaServer
 
-Unfortunately the process to install the Linux OS requires some manual intervention. I will revisit how I install Linux	at a later time so we can fully automate this media server setup.
+Unfortunately the process to install the Linux OS requires some manual intervention. I will revisit how I install Linux	at a later time so we can fully automate this server setup.
 
 # Wrap Up 
 
-We have barely scratched the surface of the Hyper-V Powershell module in this post. Microsoft has given us some very powerful tools for us to use built into Windows 10 for free. I hope to have time to learn more when I revisit this module for later projects.
-
-...to be continued
+We have barely scratched the surface of the Hyper-V Powershell module in this post. Microsoft has given us some very powerful tools built right into Windows 10 for free. I hope to have time to learn more when I revisit this module for later projects.
