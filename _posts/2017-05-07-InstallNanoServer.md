@@ -7,7 +7,7 @@ Nano Server is a stripped-down version of Windows Server developed by Microsoft 
 
 # Install Nano server
 
-You can [download](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) a preconfigured Nano Server VHD(.exe) from microsoft, you will need to sign in and register if you haven't already. The download is quick and the installation wizard is simple. Next > Next > Next and we have ourselves a Nano Server Data Center VHD. This VHD was built using the public TP4 media, it will expire on the same date as TP4 (July 15th, 2016).
+You can [download](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) a preconfigured Nano Server VHD(.exe) from microsoft, you will need to sign in and register if you haven't already. The download is quick and the installation wizard is simple. Next > Next > Next and we have ourselves a Nano Server Data Center VHD. This VHD was built using the public TP4 media, and will expire on the same date as TP4 (July 15th, 2016).
 
 Let's use some commands we learned in an [earlier post](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) to create a new VM in Hyper V.
 
@@ -27,7 +27,7 @@ Let's use some commands we learned in an [earlier post](https://dejulia489.githu
 
 # Remoting into Nano Server
 
-Our Nano VM is up and running let's try to remote into our Nano server. 
+We now have a Nano VM up and running in Hyper V, let's try remoting into it. 
 
 First we will need to trust our new Nano Server's IP
 	
@@ -57,6 +57,4 @@ Using a preconfigured VHD seems like the easy way out but we will revisit config
 
 # Credit
 
-* Microsoft Documentation: [Deploy Nano Server](https://docs.microsoft.com/en-us/windows-server/get-started/deploy-nano-server)
-
-...to be continued
+* Microsoft Documentation: [Nano Server Quick Start](https://docs.microsoft.com/en-us/windows-server/get-started/nano-server-quick-start)
