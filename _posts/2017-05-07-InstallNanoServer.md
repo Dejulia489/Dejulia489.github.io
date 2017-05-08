@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Install Nano Server
+title: How to Install Nano Server in Hyper V
 ---
 
 Nano Server is a stripped-down version of Windows Server developed by Microsoft specifically for running cloud applications and containers. There is no local logon or Remote Desktop. Instead, management of the OS is performed remotely via WMI and PowerShell cmdlets.
