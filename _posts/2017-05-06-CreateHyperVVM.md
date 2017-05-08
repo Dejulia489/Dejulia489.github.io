@@ -3,13 +3,23 @@ layout: post
 title: How to Create a Linux Virtual Server in Hyper V with Powershell
 ---
 
-Now that we have enabled Hyper V we can utilize the built in Hyper V module. At the time of this post the Hyper V Module contains 232 commands, which is a rather robust module providing a lot of functionality. We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. 
+Now that we have [enabled Hyper V](https://dejulia489.github.io/2017-05-05-EnableHyperVWindows10/) we can utilize the built in Hyper V module. At the time of this post the Hyper V Module contains 232 commands, which is a rather robust module providing a lot of functionality. 
+
+## Update Help
+
+We will need to leverage the help documentation for this module to better understand the Functions we have at our disposal. I find it useful to review all the commands in a new module to get a feel for what it is capable of. You can gather a lot just from the name of the command, however sometimes the command doesn't always do what we expect it to do. This is where the help documentation comes to the resuce. 
 
 ###### We can use the snippet below to update our help files.
 
 	Update-Help
 
-## Creating a new VHD
+Now that our help files are up to date let's take a look at the first command we will want to use.
+
+###### We can use the snippet below to get the help documentation for any command.
+
+	Get-Help -Name New-VHD
+
+# Creating a new VHD
 
 Before we can create a new VM we will first need to create a virtual hard drive. 
 
@@ -17,7 +27,7 @@ Before we can create a new VM we will first need to create a virtual hard drive.
 
 	New-VHD -Dynamic -Path 'C:\Virtual HardDrives\MediaServer.vhdx'-SizeBytes 2e+10
 
-## Creating a new VM
+# Creating a new VM
 
 Now that we have our VHD ready let's create a new Virtual Machine and attach our VHD
 
@@ -25,14 +35,15 @@ Now that we have our VHD ready let's create a new Virtual Machine and attach our
 
 	New-VM -Name MediaServer -VHDPath 'C:\Virtual HardDrives\MediaServer.vhdx' -Path 'C:\VirtualMachines' 
 
-## Reviewing VM configuration
+# Reviewing VM configuration
+
 Now that we have a new VM to work with let's check on the default configuration. 
 
 ###### We can use the snippet below to get our VM configuration.
 
 	Get-VM -Name MediaServer | Select-Object -Property *  
 
-## Adding a Network Switch
+# Adding a Network Switch
 
 We will eventually want our new VM to connect to the internet, so lets create and add a VMSwitch. 
 
