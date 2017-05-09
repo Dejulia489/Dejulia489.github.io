@@ -7,7 +7,7 @@ We have [Installed OpenSSH on Linux Ubuntu](https://dejulia489.github.io/2017-05
 
 # Installing OpenSSH
 
-We can use the following choco command to install OpenSSH, see [Installing Chocolatey on Windows 10](https://dejulia489.github.io/2017-05-08-InstallingChocolateyOnWindows10/) for a quick Chocolatey setup. 
+We can use the following choco command to install OpenSSH, see [Installing Chocolatey on Windows 10](https://dejulia489.github.io/2017-05-07-InstallingChocolateyOnWindows10/) for a quick Chocolatey setup. 
 
 ###### We can use the snippet below to install OpenSSH with Chocolatey
 
