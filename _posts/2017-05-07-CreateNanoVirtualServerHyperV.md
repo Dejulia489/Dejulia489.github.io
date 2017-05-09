@@ -5,11 +5,11 @@ title: How to Create a Nano Server in Hyper V
 
 Nano Server is a stripped-down version of Windows Server developed by Microsoft specifically for running cloud applications and containers. There is no local logon or Remote Desktop. Instead, management of the OS is performed remotely via WMI and PowerShell cmdlets.
 
-# Installing Nano server
+# Spinning Up Nano server
 
 You can [download](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) a preconfigured Nano Server VHD(.exe) from microsoft, you will need to sign in and register if you haven't already. The download is quick and the installation wizard is simple. Next > Next > Next and we have ourselves a Nano Server Data Center VHD. This VHD was built using the public TP4 media, and will expire on the same date as TP4 (July 15th, 2016).
 
-Let's use some commands we learned in an [earlier post](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) to create a new VM in Hyper V.
+Let's use some commands we learned in an [earlier post](https://dejulia489.github.io/2017-05-06-CreateLinuxVirtualServerHyperV/) to create a new VM in Hyper V.
 
 ###### We can use the snippet below to create a new VM. 
 
