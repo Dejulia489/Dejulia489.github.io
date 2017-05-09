@@ -5,7 +5,7 @@ title: How to Install Powershell on Linux Ubuntu
 
 Now that we have our new Linux Virtual Machine running in Hyper V lets work on installing Powershell. Powershell in now an [open source](https://github.com/PowerShell/PowerShell) project on GitHub and is available for both Linux and Mac. We will first need to logon to our Virtual Server we created in a previous post titled [How to Create a Virtual Machine in Hyper V](https://dejulia489.github.io/2017-05-06-CreateHyperVVM/) and open the Terminal.
 
-# Install  
+# Installing Powershell  
 
 First we will need to setup a public repository. 
 
@@ -39,7 +39,7 @@ Simply type powershell into the Terminal and [voila](https://www.merriam-webster
 
 	$PSversionTable
 
-# Uninstall
+# Uninstalling Powershell
 
 If you need to uninstall for any reason it is as simple as running the code below. 
 
