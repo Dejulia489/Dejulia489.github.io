@@ -25,7 +25,7 @@ Before we can create a new VM we will first need to create a virtual hard drive.
 
 ###### We can use the snippet below to create a 20GB dynamic VHD.
 
-	New-VHD -Dynamic -Path 'C:\Virtual HardDrives\MediaServer.vhdx'-SizeBytes 2e+10
+	New-VHD -Dynamic -Path $VHDPath -SizeBytes 2e+10
 
 # Creating a new VM
 
@@ -33,7 +33,7 @@ Now that we have our VHD ready let's create a new Virtual Machine and attach our
 
 ###### We can use the snippet below to create a new VM. 
 
-	New-VM -Name MediaServer -VHDPath 'C:\Virtual HardDrives\MediaServer.vhdx' -Path 'C:\VirtualMachines' 
+    New-VM -Name $VMName -VHDPath $VHDPath -Path $VMPath
 
 # Reviewing VM configuration
 
@@ -41,7 +41,7 @@ Our new VM has been created let's check on the default configuration.
 
 ###### We can use the snippet below to get our VM configuration.
 
-	Get-VM -Name MediaServer | Select-Object -Property *  
+	Get-VM -Name $VMName | Select-Object -Property *  
 
 # Adding a Network Switch
 
@@ -49,26 +49,29 @@ We will eventually want our new VM to connect to the internet, so lets create an
 
 ###### We can use the snippet below to create a VMSwitch.
 
-	New-VMSwitch -Name VirtualSwitch1 -SwitchType Internal | 
+	New-VMSwitch -Name $VMSwitchName -SwitchType Internal | 
 		Set-VMSwitch -NetAdapterName Ethernet  
 
 Now that we have a Virtual Switch created we will need to configure the VM to use our switch.
 
 ###### We can use the snippet below to connect the VM to the Switch.
 
-	Get-VM -Name MediaServer | 
+	Get-VM -Name $VMName | 
 		Get-VMNetworkAdapter | 
-		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1'  
+		Connect-VMNetworkAdapter -SwitchName $VMSwitchName 
 
-## Bootstrapping an Operating System
+# Bootstrapping an Operating System
 
 We will need to run an Operating System on our new VM, you can use your favorite but for this post I will use Ubuntu Studio. We will be using this VM for a few more exercises and we will need Ubuntu. [Click here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/best-practices-for-running-linux-on-hyper-v) for Microsofts Best Practices for running Linux on Hyper-V.
 
-###### We can use the snippet below to attach the OS .iso and start the VM.
+###### We can use the snippet below to attach the OS .iso.
 
-	Get-VMDvdDrive -VMName MediaServer | 
-		Set-VMDvdDrive -Path 'C:\Operating Systems\ubuntustudio-16.04.1-dvd-amd64.iso' |
-		Start-VM -VMName MediaServer
+	Get-VMDvdDrive -VMName $VMName | 
+		Set-VMDvdDrive -Path $OsIsoPath
+
+###### We can use the snippet below to start our new VM.
+
+		Start-VM -VMName $VMName
 
 Unfortunately the process to install the Linux OS requires some manual intervention. I will revisit how I install Linux	at a later time so we can fully automate this server setup.
 
