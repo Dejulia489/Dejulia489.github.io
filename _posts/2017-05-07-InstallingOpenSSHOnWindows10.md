@@ -3,16 +3,21 @@ layout: post
 title: Installing OpenSSH on Windows 10
 ---
 
+We have [Installed OpenSSH on Linux Ubuntu](https://dejulia489.github.io/2017-05-07-InstallingOpenSSHOnLinux/), now let's install OpenSSH on Windows 10.
+
 # Installing OpenSSH
 
-In two of my earlier posts we [created a Linux VM](https://dejulia489.github.io/2017-05-06-CreateLinuxVirtualServerHyperV/) and [installed Powershell on Linux](https://dejulia489.github.io/2017-05-06-InstallingPowershellOnLinux/), now let's install [OpenSSH](https://help.ubuntu.com/lts/serverguide/openssh-server.html) and start remoting. OpenSSH is a freely available version of the Secure Shell (SSH) protocol family of tools for remotely controlling, or transferring files between, computers. 
+We can use the following choco command to install OpenSSH, see [Installing Chocolatey on Windows 10](https://dejulia489.github.io/2017-05-08-InstallingChocolateyOnWindows10/) for a quick Chocolatey setup. 
 
-###### We can use the snippet below to install OpenSSH in the terminal
+###### We can use the snippet below to install OpenSSH with Chocolatey
 
-Coming Soon...
+	choco install openssh
+
+...to be continued
 
 ![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
 # Credit  
 
 * PowerShell Documentation: [Powershell Remoting Over SSH](https://github.com/PowerShell/PowerShell/blob/866b558771a20cca3daa47f300e830b31a24ee95/docs/new-features/remoting-over-ssh/README.md)
+* PowerShell Documentation: [Install Win32 OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH)
