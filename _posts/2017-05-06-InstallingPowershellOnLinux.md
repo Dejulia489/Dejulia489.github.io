@@ -7,7 +7,13 @@ Now that we have our new Linux Virtual Machine running in Hyper V lets work on i
 
 # Installing Powershell  
 
-First we will need to setup a public repository. 
+First we will need to install curl.
+
+###### We can use the snippet below to Import the public repository GPG keys.
+
+	sudo apt-get install curl 
+
+Second we will need to configure microsoft as a public repository. 
 
 ###### We can use the snippet below to Import the public repository GPG keys.
 
@@ -38,6 +44,10 @@ Simply type powershell into the Terminal and [voila](https://www.merriam-webster
 ###### We can use the snippet below to show the PowerShell version.
 
 	$PSversionTable
+
+###### Results
+
+![PSVersionTableOnLinuxUbuntu](https://dejulia489.github.io/img/PSVersionTableOnLinuxUbuntu.PNG)
 
 # Uninstalling Powershell
 
