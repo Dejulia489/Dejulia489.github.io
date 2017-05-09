@@ -11,7 +11,7 @@ In two of my earlier posts we [created a Linux VM](https://dejulia489.github.io/
 
 Coming Soon...
 
-![workingonit](https://dejulia489.github.io/img/WorkingOnit.gif)
+![WorkingOnIt](https://dejulia489.github.io/img/WorkingOnIt.gif)
 
 # Credit  
 
