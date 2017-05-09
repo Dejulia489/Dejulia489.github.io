@@ -44,7 +44,11 @@ Now we should be able to create a remote session from our Linux server to itself
 
 ###### We can use the following command to remote to our Linux server
 
-	Enter-PSSession -HostName MediaServer -UserName administrator
+	Enter-PSSession -HostName $VMName
+
+###### Results
+
+![LinuxUbuntuToLinuxUbuntuPSSession](https://dejulia489.github.io/img/LinuxUbuntuToLinuxUbuntuPSSession.PNG)
 
 # Credit  
 
