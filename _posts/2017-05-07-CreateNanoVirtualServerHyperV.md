@@ -9,21 +9,21 @@ Nano Server is a stripped-down version of Windows Server developed by Microsoft 
 
 You can [download](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2016) a preconfigured Nano Server VHD(.exe) from microsoft, you will need to sign in and register if you haven't already. The download is quick and the installation wizard is simple. Next > Next > Next and we have ourselves a Nano Server Data Center VHD. This VHD was built using the public TP4 media, and will expire on the same date as TP4 (July 15th, 2016).
 
-Let's use some commands we learned in an [earlier post](https://dejulia489.github.io/2017-05-06-CreateLinuxVirtualServerHyperV/) to create a new VM in Hyper V.
+Let's use some commands we learned in an earlier post to create a [New Linux VM in Hyper V](https://dejulia489.github.io/2017-05-06-CreateLinuxVirtualServerHyperV/).
 
 ###### We can use the snippet below to create a new VM. 
 
-	New-VM -Name NanoServer1 -VHDPath 'C:\Windows Server 2016 DataCenter Nano VHD\NanoServerDataCenter.vhd' -Path 'C:\VirtualMachines' 
+	New-VM -Name $VMName -VHDPath 'C:\Windows Server 2016 DataCenter Nano VHD\NanoServerDataCenter.vhd' -Path $VMPath 
 
 ###### We can use the snippet below to configure the network adapter. 
 
-	Get-VM -VMName NanoServer1 | 
+	Get-VM -VMName $VMName | 
 		Get-VMNetworkAdapter | 
-		Connect-VMNetworkAdapter -SwitchName 'VirtualSwitch1' 
+		Connect-VMNetworkAdapter -SwitchName $VMSwitchName 
 
 ###### We can use the snippet below to start our VM
 
-	Start-VM -VMName NanoServer1
+	Start-VM -VMName $VMName
 
 # Remoting into Nano Server
 
@@ -39,7 +39,7 @@ Now we can remote in by using the Enter-PSSession command.
 
 ###### We can use the snippet below to remote into our Nano Server
 
-	Enter-PSSession -ComputerName 192.168.1.17 -Credential Administrator
+	Enter-PSSession -ComputerName $NanoServerIP -Credential Administrator
 
 ##### Results
 
