@@ -7,6 +7,8 @@ title: Installing Chocolatey on Windows 10
 
 # Installing Chocolatey
 
+A quick warning about executing scripts found on the internet, don't do it. ...unless you have reviewed the script and are comfortable with it's contents. 
+
 ###### We can use the snippet below to install Chocolatey, this must be run as an administrator
 
 	Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
@@ -16,6 +18,8 @@ Now that Chocolatey is installed we can use the choco command to install all typ
 	choco install $PackageName
 
 # Upgrading Chocolatey
+
+###### We can use the snippet below to upgrade Chocolatey, this must be run as an administrator
 
 	choco upgrade chocolatey
 
