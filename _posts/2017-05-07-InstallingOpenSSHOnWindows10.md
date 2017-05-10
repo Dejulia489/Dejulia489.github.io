@@ -40,12 +40,12 @@ We will also need to open port 22 in the firewall for inbound traffic for SSH.
 
 	New-NetFirewallRule -Protocol TCP -LocalPort 22 -Direction Inbound -Action Allow -DisplayName SSH
 
-We will need this service running after a reboot, let's set sshd and the ssh-agent service to auto-start mode.
+We will need this service running after a reboot, so let's set the SSHD and the SSH-Agent service to auto-start mode.
 
 ###### We can use the snippet below to set both services to autostart
 
-	Set-Service sshd -StartupType Automatic
-	Set-Service ssh-agent -StartupType Automatic
+	Set-Service SSHD -StartupType Automatic
+	Set-Service SSH-Agent -StartupType Automatic
 
 Now that we have OpenSSH installed let's configure the sshd_config file.
 
