@@ -24,7 +24,7 @@ Now that we have the module installed we can start creating builds from the comm
 
 ```Powershell
 $secureToken = ConvertTo-SecureString -String 'myToken' -AsPlainText -Force
-Invoke-APBuild -Instance 'https://dev.azure.com/' -Collection 'michaeldejulia' -Project 'AzurePipelinesPS' -PersonalAccessToken $secureToken -ApiVersion '5.0-preview.4' -Name 'AzurePipelinesPS'
+New-APBuild -Instance 'https://dev.azure.com/' -Collection 'michaeldejulia' -Project 'AzurePipelinesPS' -PersonalAccessToken $secureToken -ApiVersion '5.0-preview.4' -Name 'AzurePipelinesPS'
 ```
 
 ![alt text][Invoke-APBuildByPersonalAccessToken]
